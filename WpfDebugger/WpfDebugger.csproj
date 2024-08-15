@@ -1,0 +1,90 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <LangVersion>Preview</LangVersion>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AvalonDock.Themes.Aero\AvalonDock.Themes.Aero.csproj" />
+    <ProjectReference Include="..\AvalonDock.Themes.Expression\AvalonDock.Themes.Expression.csproj" />
+    <ProjectReference Include="..\AvalonDock.Themes.Metro\AvalonDock.Themes.Metro.csproj" />
+    <ProjectReference Include="..\AvalonDock.Themes.VS2010\AvalonDock.Themes.VS2010.csproj" />
+    <ProjectReference Include="..\AvalonDock.Themes.VS2013\AvalonDock.Themes.VS2013.csproj" />
+    <ProjectReference Include="..\AvalonDock\AvalonDock.csproj" />
+    <ProjectReference Include="..\Disassembler\Disassembler.csproj" />
+    <ProjectReference Include="..\X86Codec\X86Codec.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\App-1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Error_red_21x20.png" />
+    <Resource Include="Resources\Information_blue_6227_21x20.png" />
+    <Resource Include="Resources\Warning_yellow_7231_21x20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\NavigateBackwards_6270.png" />
+    <Resource Include="Resources\NavigateForward_6271.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\BuildErrorList_7237.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Property_501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Open_6529.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\DisassemblyWindow_6536.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\ShowMethodPane_10446.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Method-Private_640.png" />
+    <Resource Include="Resources\Method-Shortcut_641.png" />
+    <Resource Include="Resources\Method_636.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Field_Blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Module_648.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Library_6213.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Constant_495.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Field-Private_545.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Namespace_654.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Namespace-Private_658.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.6.1" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+  </ItemGroup>
+</Project>
